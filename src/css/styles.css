@@ -1,0 +1,33 @@
+.infoRedesSociales{
+    color: black;
+    padding: 20px;
+}
+
+.infoContentRedesSociales{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.infoContentRedesSociales .block{
+    padding: 8px;
+    width: 100%;
+}
+
+.infoContentRedesSociales .block .icon-social{
+    font-size: 70px;
+}
+
+#quienesSomos{
+    padding-top: 50px;
+}
+
+#infoAditionalQuienesSomos {
+    background: #f1f1f1;
+    padding: 50px 0 30px 0;
+    text-align:center;
+    margin-top: 40px;
+}
+
+  
