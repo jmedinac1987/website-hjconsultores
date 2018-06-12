@@ -21,9 +21,9 @@
     
     <!--Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-        <div class="container">
-            <a href="#quienesSomos" class="navbar-brand"> <strong> HJ </strong>Consultores</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        
+            <a href="#quienesSomosLi" class="navbar-brand" id="hjConsultoresNav"> <strong> HJ </strong>Consultores</a>
+            <button id="togglerButtonNavHJ" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>            
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -44,7 +44,7 @@
                     </ul>
                 </div>
             </div>               
-        </div>        
+        
     </nav>  
     
     <!--Sections Quiénes Somos -->
@@ -62,7 +62,7 @@
                         <p class="mt-5">Amet possimus omnis dolore aliquid quam. Officiis nulla nam laudantium iure amet. Debitis maiores enim modi porro sunt. Ratione harum quasi odit nemo rerum eveniet dolorem quas rem asperiores voluptate! <br />
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ea aspernatur, sapiente quis tempore asperiores delectus quia ducimus laborum ipsam cupiditate tenetur porro eius blanditiis perspiciatis, corporis accusantium corrupti! Animi!
                         </p>
-                        <a href="#quienesSomos" class="btn btn-outline-secondary quienesSomos-btn btn-lg mt-2">Read More</a>
+                        <a href="#quienesSomos" id="quienesSomos-btn" class="btn btn-outline-secondary btn-lg mt-2">Read More</a>
                     </div>
                 </div>
             </div>
@@ -209,7 +209,7 @@
     </section>
 
     <!--Script Vendor-->
-    
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="./src/vendor/jquery3.3.1/jquery-3.3.1.min.js"></script>    
     <script src="./src/vendor/popper1.14.3/popper.min.js"></script>
     <script src="./src/vendor/bootstrap4.1/js/bootstrap.min.js"></script>

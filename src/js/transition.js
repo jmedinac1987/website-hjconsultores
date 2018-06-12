@@ -1,5 +1,49 @@
 $(document).ready(function(){
 
+    //ScrollReveal plugin
+    window.sr = ScrollReveal({duration: 2000, reset: true});
+    
+    sr.reveal('.navbar', {
+      origin: 'bottom',
+      reset: false
+    });
+
+    sr.reveal('.quienesSomos-content-left', {        
+        origin: 'top'        
+    });
+
+    sr.reveal('.quienesSomos-content-right', {        
+        origin: 'right'        
+    });
+
+    sr.reveal('#quienesSomos-btn', {        
+        origin: 'bottom'
+    });
+
+    sr.reveal('#quienesSomosChild', {
+        origin: 'left'
+    });
+
+    sr.reveal('#infoAditionalQuienesSomos', {
+        origin: 'left'
+    });
+
+    sr.reveal('#servicios', {
+        origin: 'left'
+    });
+
+    sr.reveal('#serviciosChild', {
+        origin: 'left'
+    });
+
+    sr.reveal('#contactanos', {
+        origin: 'left'
+    });
+
+    sr.reveal('#redesSociales', {
+        origin: 'left'
+    });        
+    //Fin ScrollReveal plugin
    
     //Ubica al usuario conforme preciona los links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -8,7 +52,10 @@ $(document).ready(function(){
             document.querySelector(this.getAttribute('href')).scrollIntoView({
                 behavior: 'smooth'               
             }); 
-       
+            
+            if($('#navbarNav')[0].attributes[0].value === "navbar-collapse collapse show"){
+                $('#togglerButtonNavHJ').click();
+            }
         });
     });
      
@@ -23,7 +70,7 @@ $(document).ready(function(){
                 if(anchor.id === matriz.item(i).id ){
                     anchor.className = "nav-item active";
                 }else{
-                    matriz.item(i).className ="nav-item" 
+                    matriz.item(i).className ="nav-item"; 
                 }
             }                  
         });
@@ -31,7 +78,7 @@ $(document).ready(function(){
 
     $('#formulario').click(function(event){
         event.preventDefault();
-        alert('En este momento la opción no esta disponible')
+        alert('En este momento la opción no esta disponible');
     });
 
 });
